@@ -1,0 +1,33 @@
+/* src/pages/About.css */
+
+.about-page {
+  text-align: center; /* Centers the text inside the container */
+  padding: 20px;
+}
+
+.about-page h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  max-width: 800px; /* Limits the width of the paragraph for better readability */
+  margin: 0 auto; /* Centers the paragraph horizontally */
+  padding: 0 300px; /* Adds 300px padding on left and right */
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.about-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about-button:hover {
+  background-color: #e65c00;
+}

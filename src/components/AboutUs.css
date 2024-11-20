@@ -1,0 +1,58 @@
+.about-us-section {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  gap: 50px;
+}
+
+.about-us-image {
+  width: 50%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-text {
+  width: 50%;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.about-us-text h2 {
+  margin: 0 0 10px;
+  font-size: 2em;
+  color: #333;
+}
+
+.about-us-text p {
+  margin: 0;
+}
+
+.about-us-image:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center; /* Center-align text for mobile */
+  }
+
+  .about-us-image,
+  .about-us-text {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+ 
+
+

@@ -1,0 +1,116 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2rem;
+  background-color: white;
+  color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo img {
+  width: 150px;
+  height: 80px;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 50px;
+  border:black;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #ffa500;
+  border: black;
+}
+
+.navbar-register {
+  display: flex;
+  gap: 1rem;
+}
+
+.register-button {
+  color: #333;
+  background-color: #ffa500;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #cc8400;
+
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hamburger .dot {
+  width: 25px;
+  height: 4px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* Responsive Design for Small and Medium Screens */
+@media (max-width: 300px) {
+  /* Stack navbar vertically */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-center {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  /* Show center links when active */
+  .navbar-center.active {
+    display: flex;
+  }
+
+  /* Place navbar-register at the bottom of the block */
+  .navbar-center.active + .navbar-register {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+
+  .navbar-register.active {
+    display: flex;
+  }
+
+  .register-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
