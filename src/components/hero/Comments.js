@@ -2,6 +2,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import "./Comments.css";
+import LiveComments from "./LiveComments";
 
 function Comments() {
   const comments = [
@@ -35,6 +36,12 @@ function Comments() {
   return (
     <div>
       <h2 className="comments-heading"><center>Comments</center></h2>
+      {/* live comments fecth by backend */}
+      <div>
+          <LiveComments />
+      </div>
+
+
     <div className="comments-section">
       {comments.map((person, index) => (
         <div key={index} className="comment-card">

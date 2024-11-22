@@ -1,3 +1,18 @@
 body{
     scroll-behavior: smooth;
 }
+
+
+/* Add transitions for smooth animation */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  

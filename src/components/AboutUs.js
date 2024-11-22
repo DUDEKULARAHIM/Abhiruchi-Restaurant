@@ -3,6 +3,7 @@ import './AboutUs.css'; // Optional for external styling
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa"; 
 import "./hero/Footer.css";
+import LiveComments from './hero/LiveComments';
 
 const AboutUs = () => {
   return (
@@ -17,7 +18,7 @@ const AboutUs = () => {
         <div className="about-us-text">
           <h2>Jagan Reddy</h2>
           <p>
-            Our mission is to deliver excellence in everything we do. With a focus on innovation and customer satisfaction, we strive to create value and make a positive impact. This image captures our commitment to quality and growth.
+            Our mission is to deliver excellence in everything we do. With a focus on innovation and customer satisfaction, This image captures our commitment to quality and growth.
           </p>
         </div>
       </div>
@@ -58,6 +59,13 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
+      </div>
+
+
+      {/* live comments section */}
+      <div>
+
+          <LiveComments />
       </div>
 
 
